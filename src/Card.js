@@ -1,11 +1,14 @@
-function Card({ questions, variants, id }) {
-  const handleClick = (e) => {
+function Card({ content, option1, option2, option3, id }) {
 
-  };
   return (
     <div className="card">
-      <h4>{questions}</h4>
-      <div onClick={(e) => handleClick(e)}>{variants}</div>
+      <h4>{content}</h4>
+      <div>
+      option1
+        <input type="radio">{option1}</input>
+        <input type="radio">{option2}</input>
+        <input type="radio">{option3}</input>
+      </div>
     </div>
   );
 }

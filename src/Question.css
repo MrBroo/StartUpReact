@@ -1,0 +1,8 @@
+.card{
+    width: 60%;
+    height: 500px;
+    padding: 100px;
+    background-color: bisque;
+    border-radius: 10px;
+    text-align: center;
+  }
