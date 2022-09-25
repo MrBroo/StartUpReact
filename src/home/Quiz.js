@@ -23,17 +23,17 @@ function Quiz() {
   }, []);
 
   const renderData = quiz.map(
-    ({ title, description, maxMarks, numberOfQuestions, id }) => (
+    ({ title, description, time, numberOfQuestions, id }) => (
       <QuizCard
         title={title}
         description={description}
-        maxMarks={maxMarks}
+        time={time}
         numberOfQuestions={numberOfQuestions}
         onClick={() => navigate(`/question/${id}`)}
       />
     )
   );
-  return <div>{renderData}</div>;
+  return <div className="quiz__page">{renderData}</div>;
 }
 
 export default Quiz;

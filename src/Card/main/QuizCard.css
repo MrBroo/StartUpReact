@@ -1,8 +1,33 @@
 .quiz {
-    width: 50%;
-    margin: 200px auto;
-    border-radius: 15px;
-    box-shadow: #00000073 1px 3px 15px 1px;
-    padding: 15px;
-  }
-  
+  width: 400px;
+  margin: 200px auto;
+  border-radius: 15px;
+  box-shadow: #00000073 1px 3px 15px 1px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.quiz h4 {
+  margin: 0;
+}
+
+.quiz__footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quiz__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.quiz__modul {
+  display: flex;
+  align-items: center;
+}
+
+.quiz:hover {
+  transform: translateY(-5%);
+}

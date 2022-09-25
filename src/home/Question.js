@@ -21,7 +21,7 @@ function Question() {
   }, []);
 
   function getOption(id) {
-    setQuestionId(id);
+    // setQuestionId(id);
     axios
       .get(`http://localhost:5852/api/option/question/${id}`)
       .then((response) => {
@@ -30,28 +30,14 @@ function Question() {
       });
   }
 
-  // const renderData = questions?.map(({ content, id }) => (
-  //   <QuestionCard content={content} />
-  // ));
+  const renderData = questions?.map(({ content, id }) => (
+    <QuestionCard content={content} key={id} onClick={() => getOption(id)} />
+  ));
+  const renderData2 = option?.map(({ option, id }) => (
+    <OptionCard option={option} key={id} />
+  ));
 
-  return (
-    <div>
-      {questions?.map((item, index) => {
-        <QuestionCard
-          key={index}
-          content={item.content}
-          onClick={() => getOption(item.id)}
-        />;
-        {
-          item.id = questionId
-            ? option.map((item, index) => {
-                <OptionCard key={index} option={item.option} />;
-              })
-            : "";
-        }
-      })}
-    </div>
-  );
+  return <div>{renderData}</div>;
 }
 
 export default Question;

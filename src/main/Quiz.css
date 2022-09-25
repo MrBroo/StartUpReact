@@ -1,0 +1,5 @@
+.quiz__page {
+  display: flex;
+  padding: 0 170px;
+  justify-content: space-between;
+}

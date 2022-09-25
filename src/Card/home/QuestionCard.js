@@ -4,7 +4,7 @@ function QuestionCard({ content, ...rest }) {
     <div className="card" {...rest}>
       <h4>{content}</h4>
     </div>
-  );
+  ); 
 }
 
 export default QuestionCard;
