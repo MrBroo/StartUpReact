@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import CategoryCard from "../Card/home/CategoryCard";
+import CategoryCard from "../../../Card/CategoryCard/CategoryCard"
 import { useNavigate } from "react-router-dom";
-import "../main/Category.css";
+import "./Category.css";
 import axios from "axios";
 
 function Category() {
   const [category, setCategory] = useState([]);
 
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     axios
       .get("http://localhost:5852/api/category/categories")

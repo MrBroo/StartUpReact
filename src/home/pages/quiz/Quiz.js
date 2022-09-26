@@ -1,8 +1,8 @@
-import "../main/Quiz.css";
+import "./Quiz.css";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import QuizCard from "../Card/home/QuizCard";
 import axios from "axios";
+import QuizCard from "../../../Card/QuizCard/QuizCard";
 
 function Quiz() {
   const [quiz, setQuiz] = useState([]);

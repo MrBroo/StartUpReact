@@ -1,4 +1,4 @@
-import "../main/Category.css";
+import "./Category.css";
 
 function CategoryCard({ title, description, ...rest }) {
   return (

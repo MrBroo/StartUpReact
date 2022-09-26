@@ -1,4 +1,4 @@
-import "../main/QuizCard.css";
+import "./QuizCard.css";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { BiWindows } from "react-icons/bi";
 

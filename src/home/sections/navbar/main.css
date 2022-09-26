@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* width: 100%;
+  position: fixed; */
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 35px;
+  padding-top: 8px;
+  font-weight: 600;
+}
+
+.nav__button {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
