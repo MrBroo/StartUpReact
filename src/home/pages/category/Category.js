@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import CategoryCard from "../../../Card/CategoryCard/CategoryCard"
+import CategoryCard from "../../../Card/CategoryCard/CategoryCard";
 import { useNavigate } from "react-router-dom";
 import "./Category.css";
 import axios from "axios";
@@ -20,6 +20,7 @@ function Category() {
 
   const renderData = category?.map(({ title, description, id }) => (
     <CategoryCard
+      key={id}
       title={title}
       description={description}
       onClick={() => navigate(`quiz/${id}`)}

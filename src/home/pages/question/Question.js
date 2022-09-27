@@ -31,14 +31,23 @@ function Question() {
   //   <QuestionCard content={content} key={id} />
   // ));
 
+  // for (var i, i = 0; i <= questions?.length; i++) {
+  //   console.log(questions[i]);
+  // }
+
+  // return Object.keys(optionEntities).map((obj, i) => {
+  //   {optionEntities[obj].id})}
+
   return (
     <div>
-      {questions?.map((obj, index) => {
+      {questions?.map((obj) => {
         return (
           <QuestionCard
-            key={index}
+            key={obj.id}
             content={obj.content}
-            optionEntities={obj.optionEntities.option}
+            optionEntities={obj.optionEntities.map((option) => {
+              <div>{option}</div>;
+            })}
           />
         );
       })}

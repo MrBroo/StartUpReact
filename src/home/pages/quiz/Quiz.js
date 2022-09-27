@@ -25,6 +25,7 @@ function Quiz() {
   const renderData = quiz.map(
     ({ title, description, time, numberOfQuestions, id }) => (
       <QuizCard
+        key={id}
         title={title}
         description={description}
         time={time}
