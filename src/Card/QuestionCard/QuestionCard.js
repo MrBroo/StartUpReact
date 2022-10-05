@@ -3,7 +3,7 @@ function QuestionCard({ content, optionEntities, ...rest }) {
   return (
     <div className="card" {...rest}>
       <h4>{content}</h4>
-      <p>{optionEntities}</p>
+      <h3>{optionEntities}</h3>
     </div>
   );
 }

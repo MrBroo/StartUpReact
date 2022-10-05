@@ -17,27 +17,6 @@ function Question() {
       });
   }, []);
 
-  //   function getOption(id) {
-  //     // setQuestionId(id);
-  //     axios
-  //       .get(`http://localhost:5852/api/option/question/${id}`)
-  //       .then((response) => {
-  //         setOption(response.data);
-  //         console.log(response.data);
-  //       });
-  //   }
-
-  // const renderData = questions?.map(({ content, id }) => (
-  //   <QuestionCard content={content} key={id} />
-  // ));
-
-  // for (var i, i = 0; i <= questions?.length; i++) {
-  //   console.log(questions[i]);
-  // }
-
-  // return Object.keys(optionEntities).map((obj, i) => {
-  //   {optionEntities[obj].id})}
-
   return (
     <div>
       {questions?.map((obj) => {
@@ -45,8 +24,8 @@ function Question() {
           <QuestionCard
             key={obj.id}
             content={obj.content}
-            optionEntities={obj.optionEntities.map((option) => {
-              <div>{option}</div>;
+            optionEntities={obj.optionEntities.map((item) => {
+              return <p>{item.option}</p>;
             })}
           />
         );
